@@ -1,0 +1,38 @@
+Index: serdisplib-1.97.9/src/Makefile.in
+===================================================================
+--- serdisplib-1.97.9.orig/src/Makefile.in	2010-02-21 20:49:29.000000000 +0100
++++ serdisplib-1.97.9/src/Makefile.in	2013-07-29 11:58:08.107734760 +0200
+@@ -22,10 +22,10 @@
+ srcdir = @srcdir@
+ prefix = @prefix@
+ exec_prefix = @exec_prefix@
+-bindir = @bindir@
+-libdir = @libdir@
+-mandir = @mandir@
+-includedir = @includedir@
++bindir = ${DESTDIR}@bindir@
++libdir = ${DESTDIR}@libdir@
++mandir = ${DESTDIR}@mandir@
++includedir = ${DESTDIR}@includedir@
+ 
+ CC=@CC@
+ AR=@AR@ -r
+Index: serdisplib-1.97.9/tools/Makefile.in
+===================================================================
+--- serdisplib-1.97.9.orig/tools/Makefile.in	2010-02-21 20:49:29.000000000 +0100
++++ serdisplib-1.97.9/tools/Makefile.in	2013-07-29 11:58:46.507505479 +0200
+@@ -10,10 +10,10 @@
+ srcdir = @srcdir@
+ prefix = @prefix@
+ exec_prefix = @exec_prefix@
+-bindir = @bindir@
+-libdir = @libdir@
+-mandir = @mandir@
+-includedir = @includedir@
++bindir = ${DESTDIR}@bindir@
++libdir = ${DESTDIR}@libdir@
++mandir = ${DESTDIR}@mandir@
++includedir = ${DESTDIR}@includedir@
+ 
+ CC=@CC@
+ AR=@AR@ -r

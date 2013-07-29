@@ -1,0 +1,12 @@
+Source: serdisplib
+Maintainer: Antoine Sgambato <asgambato@gmail.com>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8), libusb-dev
+
+Package: serdisplib
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libusb
+Description: serial display library
+ a library to drive serial displays with built-in controllers.
